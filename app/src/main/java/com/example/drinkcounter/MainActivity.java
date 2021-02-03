@@ -19,27 +19,38 @@ public class MainActivity extends AppCompatActivity {
         viewCount = (TextView) findViewById(R.id.count);
     }
 
-    public void countUp(View view) {
+    public void countWater(View view) {
         count++;
         if (viewCount != null) {
-            viewCount.setText(Integer.toString(count));
+            viewCount.setText(String.format("%d verre(s)",count));
         }
     }
 
-    public void countDown(View view) {
-        count--;
-        if (count < 0) {
-            count = 0;
-        }
+    public void countHotTea(View view) {
+        count++;
         if (viewCount != null) {
-            viewCount.setText(Integer.toString(count));
+            viewCount.setText(String.format("%d verre(s)",count));
+        }
+    }
+
+    public void countIceTea(View view) {
+        count++;
+        if (viewCount != null) {
+            viewCount.setText(String.format("%d verre(s)",count));
+        }
+    }
+
+    public void countMilk(View view) {
+        count++;
+        if (viewCount != null) {
+            viewCount.setText(String.format("%d verre(s)",count));
         }
     }
 
     public void resetCount(View view) {
         count = 0;
         if (viewCount != null) {
-            viewCount.setText(Integer.toString(count));
+            viewCount.setText(String.format("%d verre",count));
         }
     }
 }
