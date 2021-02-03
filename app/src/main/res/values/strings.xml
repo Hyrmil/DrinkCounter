@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DrinkCounter</string>
+    <string name="title_label">Total verre</string>
+    <string name="button_label_plus">+</string>
+    <string name="button_label_minus">-</string>
+    <string name="count_label">Commencer le compte</string>
+    <string name="reset_label">Nouvelle journée</string>
+</resources>
