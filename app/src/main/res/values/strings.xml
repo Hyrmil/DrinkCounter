@@ -1,10 +1,17 @@
 <resources>
-    <string name="app_name">DrinkCounter</string>
-    <string name="title_label">Total verre</string>
+    <!-- Buttons -->
     <string name="button_label_water">Verre d\'eau</string>
     <string name="button_label_hot_tea">Thé chaud</string>
     <string name="button_label_ice_tea">Thé froid</string>
     <string name="button_label_milk">Lait chocolat</string>
-    <string name="count_label">Commencer le compte</string>
     <string name="reset_label">Nouvelle journée</string>
+    <string name="button_label_plus">+</string>
+    <string name="button_label_minus">-</string>
+    <!-- TextView -->
+    <string name="more_drinks">Plus..</string>
+    <!-- ImageView -->
+    <!-- Other -->
+    <string name="app_name">DrinkCounter</string>
+    <string name="title_label">Total verre</string>
+    <string name="count_label">Commencer le compte</string>
 </resources>
