@@ -61,6 +61,27 @@ public class MainActivity extends AppCompatActivity {
         viewDate.setText(date);
     }
 
+    private Integer increment (TextView view, Integer count) {
+        count++;
+
+        if (view != null) {
+            view.setText(Integer.toString(count));
+        }
+        return count;
+    }
+
+    private Integer decrement (TextView view, Integer count) {
+        count--;
+
+        if (count < 0) {
+            count= 0;
+        }
+
+        if (view != null) {
+            view.setText(Integer.toString(count));
+        }
+        return count;
+    }
     public void resetCount(View view) {
         count1 = count2 = count3 = count4 = 0;
         if (viewCount1 != null) {
@@ -77,82 +98,38 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void sub_counter(View view) {
-        switch (view.getId()) {
-            case R.id.buttonMinus1:
-                count1--;
-                if (count1 < 0) {
-                    count1 = 0;
-                }
-
-                if (viewCount1 != null) {
-                    viewCount1.setText(Integer.toString(count1));
-                }
-                break;
-
-            case R.id.buttonMinus2:
-                count2--;
-                if (count2 < 0) {
-                    count2 = 0;
-                }
-
-                if (viewCount2 != null) {
-                    viewCount2.setText(Integer.toString(count2));
-                }
-                break;
-
-            case R.id.buttonMinus3:
-                count3--;
-                if (count3 < 0) {
-                    count3 = 0;
-                }
-
-                if (viewCount3 != null) {
-                    viewCount3.setText(Integer.toString(count3));
-                }
-                break;
-
-            case R.id.buttonMinus4:
-                count4--;
-                if (count4 < 0) {
-                    count4 = 0;
-                }
-
-                if (viewCount4 != null) {
-                    viewCount4.setText(Integer.toString(count4));
-                }
-                break;
-        }
-    }
-
-    public void add_counter(View view) {
+    public void onClick(View view) {
         switch (view.getId()) {
             case R.id.buttonPlus1:
-                count1++;
-                if (viewCount1 != null) {
-                    viewCount1.setText(Integer.toString(count1));
-                }
+                count1 = increment(viewCount1, count1);
                 break;
 
             case R.id.buttonPlus2:
-                count2++;
-                if (viewCount2 != null) {
-                    viewCount2.setText(Integer.toString(count2));
-                }
+                count2 = increment(viewCount2, count2);
                 break;
 
             case R.id.buttonPlus3:
-                count3++;
-                if (viewCount3 != null) {
-                    viewCount3.setText(Integer.toString(count3));
-                }
+                count3 = increment(viewCount3, count3);
                 break;
 
             case R.id.buttonPlus4:
-                count4++;
-                if (viewCount4 != null) {
-                    viewCount4.setText(Integer.toString(count4));
-                }
+                count4 = increment(viewCount4, count4);
+                break;
+
+            case R.id.buttonMinus1:
+                count1 = decrement(viewCount1, count1);
+                break;
+
+            case R.id.buttonMinus2:
+                count2 = decrement(viewCount2, count2);
+                break;
+
+            case R.id.buttonMinus3:
+                count3 = decrement(viewCount3, count3);
+                break;
+
+            case R.id.buttonMinus4:
+                count4 = decrement(viewCount4, count4);
                 break;
         }
     }
