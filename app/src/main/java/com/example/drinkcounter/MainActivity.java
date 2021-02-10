@@ -16,7 +16,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
-    private Integer count1 = 0, count2 = 0, count3 = 0 , count4 = 0 ;
+    private Integer count1 = 0, count2 = 0, count3 = 0, count4 = 0;
     private TextView viewCount1, viewCount2, viewCount3, viewCount4;
     private TextView viewDate;
     private Button viewButtonM1, viewButtonM2, viewButtonM3, viewButtonM4;
@@ -90,33 +90,33 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
 
-                case R.id.buttonMinus2:
-                    count2--;
-                    if (count2 < 0) {
-                        count2 = 0;
-                    }
+            case R.id.buttonMinus2:
+                count2--;
+                if (count2 < 0) {
+                    count2 = 0;
+                }
 
                 if (viewCount2 != null) {
                     viewCount2.setText(Integer.toString(count2));
                 }
                 break;
 
-                case R.id.buttonMinus3:
-                    count3--;
-                    if (count3 < 0) {
-                        count3 = 0;
-                    }
+            case R.id.buttonMinus3:
+                count3--;
+                if (count3 < 0) {
+                    count3 = 0;
+                }
 
                 if (viewCount3 != null) {
                     viewCount3.setText(Integer.toString(count3));
                 }
                 break;
 
-                case R.id.buttonMinus4:
-                    count4--;
-                    if (count4 < 0) {
-                        count4 = 0;
-                    }
+            case R.id.buttonMinus4:
+                count4--;
+                if (count4 < 0) {
+                    count4 = 0;
+                }
 
                 if (viewCount4 != null) {
                     viewCount4.setText(Integer.toString(count4));
