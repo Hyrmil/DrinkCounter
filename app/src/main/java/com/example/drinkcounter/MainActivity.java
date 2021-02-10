@@ -18,11 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     private Integer count1 = 0, count2 = 0, count3 = 0, count4 = 0;
     private TextView viewCount1, viewCount2, viewCount3, viewCount4;
-    private TextView viewDate;
-    private Button viewButtonM1, viewButtonM2, viewButtonM3, viewButtonM4;
-    /* Plus buttons */
-    /* Minus buttons */
-    private Button viewButtonP1, viewButtonP2, viewButtonP3, viewButtonP4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,20 +30,8 @@ public class MainActivity extends AppCompatActivity {
         viewCount3 = (TextView) findViewById(R.id.count3);
         viewCount4 = (TextView) findViewById(R.id.count4);
 
-        /* Plus buttons setters */
-        viewButtonP1 = (Button) findViewById(R.id.buttonPlus1);
-        viewButtonP2 = (Button) findViewById(R.id.buttonPlus2);
-        viewButtonP3 = (Button) findViewById(R.id.buttonPlus3);
-        viewButtonP4 = (Button) findViewById(R.id.buttonPlus4);
-
-        /* Minus buttons setters*/
-        viewButtonM1 = (Button) findViewById(R.id.buttonMinus1);
-        viewButtonM2 = (Button) findViewById(R.id.buttonMinus2);
-        viewButtonM3 = (Button) findViewById(R.id.buttonMinus3);
-        viewButtonM4 = (Button) findViewById(R.id.buttonMinus4);
-
         /* Others to deal with */
-        viewDate = (TextView) findViewById(R.id.dateStamp);
+        TextView viewDate = (TextView) findViewById(R.id.dateStamp);
         setDate(viewDate);
 
     }
