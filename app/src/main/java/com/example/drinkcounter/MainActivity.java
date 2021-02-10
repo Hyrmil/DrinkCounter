@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         viewDate.setText(date);
     }
 
-    private Integer increment (TextView view, Integer count) {
+    private Integer increment(TextView view, Integer count) {
         count++;
 
         if (view != null) {
@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
         return count;
     }
 
-    private Integer decrement (TextView view, Integer count) {
+    private Integer decrement(TextView view, Integer count) {
         count--;
 
         if (count < 0) {
-            count= 0;
+            count = 0;
         }
 
         if (view != null) {
