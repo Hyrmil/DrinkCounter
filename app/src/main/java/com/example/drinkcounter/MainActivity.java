@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         count++;
 
         if (view != null) {
-            view.setText(Integer.toString(count));
+            view.setText(String.format("%d", count));
         }
         return count;
     }
@@ -78,23 +78,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (view != null) {
-            view.setText(Integer.toString(count));
+            view.setText(String.format("%d", count));
         }
         return count;
     }
     public void resetCount(View view) {
         count1 = count2 = count3 = count4 = 0;
         if (viewCount1 != null) {
-            viewCount1.setText(Integer.toString(count1));
+            viewCount1.setText(String.format("%d", count1));
         }
         if (viewCount2 != null) {
-            viewCount2.setText(Integer.toString(count2));
+            viewCount2.setText(String.format("%d", count2));
         }
         if (viewCount3 != null) {
-            viewCount3.setText(Integer.toString(count3));
+            viewCount3.setText(String.format("%d", count3));
         }
         if (viewCount4 != null) {
-            viewCount4.setText(Integer.toString(count4));
+            viewCount4.setText(String.format("%d", count4));
         }
     }
 
