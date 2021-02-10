@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
 
-        String result;
         switch (view.getId()) {
             case R.id.buttonPlus1:
                 count1 = increment(viewCount1, count1);
