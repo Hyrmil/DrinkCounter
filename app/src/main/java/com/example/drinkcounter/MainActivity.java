@@ -10,11 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.drinkcounter.feature.ButtonMath;
 import com.example.drinkcounter.feature.DateSetup;
 
-import java.text.DateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
-
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
