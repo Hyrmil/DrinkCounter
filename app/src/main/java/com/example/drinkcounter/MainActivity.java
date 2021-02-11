@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.drinkcounter.feature.ButtonMath;
+import com.example.drinkcounter.feature.DateSetup;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     private ButtonMath counting = new ButtonMath();
+    private DateSetup ds = new DateSetup();
     private Integer count1 = 0, count2 = 0, count3 = 0, count4 = 0;
     private TextView viewCount1, viewCount2, viewCount3, viewCount4;
     private Boolean showCount1 = false, showCount2 = false, showCount3 = false, showCount4 = false;
@@ -35,16 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         /* Others to deal with */
         TextView viewDate = (TextView) findViewById(R.id.dateStamp);
-        setDate(viewDate);
+        ds.setDate(viewDate);
 
-    }
-
-    private void setDate(TextView viewDate) {
-
-        Date today = Calendar.getInstance().getTime();//getting date
-        DateFormat df = DateFormat.getDateInstance(DateFormat.FULL, Locale.FRANCE);
-        String date = df.format(today);
-        viewDate.setText(date);
     }
 
     public void onClick(View view) {
