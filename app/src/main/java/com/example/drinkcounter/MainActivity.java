@@ -79,21 +79,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.buttonReset:
-                if (showCount[0]) {
-                    count[0] = counting.resetCount(viewCount[0], count[0]);
-                    showCount[0] = false;
-                }
-                if (showCount[1]) {
-                    count[1] = counting.resetCount(viewCount[1], count[1]);
-                    showCount[1] = false;
-                }
-                if (showCount[2]) {
-                    count[2] = counting.resetCount(viewCount[2], count[2]);
-                    showCount[2] = false;
-                }
-                if (showCount[3]) {
-                    count[3] = counting.resetCount(viewCount[3], count[3]);
-                    showCount[4] = false;
+                for (int i = 0; i < count.length; i++) {
+                    if (showCount[i]) {
+                        count[i] = counting.resetCount(viewCount[i], count[i]);
+                        showCount[i] = false;
+                    }
                 }
                 break;
 
