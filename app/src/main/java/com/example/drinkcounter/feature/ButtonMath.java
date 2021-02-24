@@ -2,6 +2,8 @@ package com.example.drinkcounter.feature;
 
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class ButtonMath {
 
     public ButtonMath() {
@@ -12,7 +14,7 @@ public class ButtonMath {
         count++;
 
         if (view != null) {
-            view.setText(String.format("%d", count));
+            view.setText(String.format(Locale.FRANCE,"%d", count));
         }
         return count;
     }
@@ -25,7 +27,7 @@ public class ButtonMath {
         }
 
         if (view != null) {
-            view.setText(String.format("%d", count));
+            view.setText(String.format(Locale.FRANCE,"%d", count));
         }
         return count;
     }
